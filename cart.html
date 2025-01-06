@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Cart - FURNIX</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f8f8f8;
+        }
+        h2 {
+            text-align: center;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .cart-item div {
+            flex: 1;
+        }
+        .total {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: right;
+        }
+        .btn {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Your Cart</h2>
+        <div class="cart-item">
+            <div>Item Name 1</div>
+            <div>Quantity: 1</div>
+            <div>Price: $100</div>
+        </div>
+        <div class="cart-item">
+            <div>Item Name 2</div>
+            <div>Quantity: 2</div>
+            <div>Price: $200</div>
+        </div>
+        <div class="cart-item">
+            <div>Item Name 3</div>
+            <div>Quantity: 1</div>
+            <div>Price: $150</div>
+        </div>
+
+        <div class="total">
+            Total: $450
+        </div>
+        <div style="text-align: center;">
+            <button class="btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script>
+        function checkout() {
+            alert('Proceeding to checkout...');
+            window.location.href = 'checkout.html'; 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>FURNIX</title>
+</head>
+<body>
+    <div id="cookieConsent">
+        We use cookies to enhance your experience. 
+        <button id="acceptCookies">Accept</button>
+    </div>
+
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border" title="FURNIX - Quality Furniture">
+                <div class="logo">FURNIX</div>
+            </div>
+            
+            <div class="nav-address border">
+                <p class="add-first">Deliver To</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot fa-beat"></i>
+                    <p class="add-second">Pakistan</p>
+                </div>
+            </div>
+            <div class="nav-search"> 
+                <select class="search-select"> 
+                    <option value="">All</option>
+                    <option value="sofas">Sofas</option>
+                    <option value="chairs">Chairs</option>
+                    <option value="tables">Tables</option>
+                    <option value="beds">Beds</option>
+                    <option value="storage">Storage</option>
+                    <option value="decor">Decor</option>
+                </select>
+                <input placeholder="Search " class="search-input"> 
+                <div class="search-icon"> 
+                    <i class="fa-solid fa-magnifying-glass"></i>       
+                </div>
+            </div>
+            <div class="nav-signin border"> 
+                <p><span onclick="signin();" style="cursor: pointer;">Hello, sign in</span></p>
+                <p class="nav-second">Account & Lists</p>
+            </div>
+            <div class="nav-return border">
+                <p><span>Return</span></p>
+                <p class="nav-second"> & Orders</p>
+            </div>
+            <div class="nav-cart border">
+                <a href="cart.html" style="text-decoration: none; color: inherit;">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart 
+                    <span id="cartCount">(0)</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="hero-section">
+        <div class="Hmsg">
+            <h2>Explore Our Collection of Stylish Furniture</h2>
+            <p>Elevate your home with our Luxurious Velvet Sofa, designed to combine comfort and style seamlessly. Crafted from premium velvet fabric, this sofa exudes sophistication while offering a plush seating experience. Transform your space with our stylish and affordable furniture, designed to elevate your home and reflect your unique style.</p>
+            <a href="shop.html" class="shop-now-button">Shop Now</a>
+        </div>
+        <div class="Himg">
+            <img src="hero1.jfif" alt="">      
+        </div>
+    </div>
+    
+    <div class="msg1">
+        <p>Transform your space with our stylish and affordable furniture, designed to elevate your home and reflect your unique style</p>
+    </div>
+    
+    <div class="images">
+        <div class="text">
+            <div class="hd1">
+                <span>CATEGRAIES</span>
+                <h3>Architecture Interior.</h3>
+            </div>
+            <div class="pr1">
+                <p>Explore the harmonious blend of functionality and aesthetics in our architecture interior experience. Our expert team will bring your vision to life, creating interiors that inspire and elevate your everyday living.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="categories">
+        <a href="link_to_classic_furniture.html" class="box">
+            <div class="box-img" style="background-image: url('hero2.jfif');"></div>
+            <span class="category-text">Classic Furniture</span>
+        </a>
+        <a href="link_to_modern_furniture.html" class="box">
+            <div class="box-img" style="background-image: url('cate2.jfif');"></div>
+            <span class="category-text">Modern Furniture</span>
+        </a>
+        <div class="box">
+            <div class="box-img" style="background-image: url('cate3.jfif');"></div>
+            <span class="category-text">Vintage Decor</span>
+        </div>
+        <div class="box">
+            <div class="box-img" style="background-image: url('cate.jfif');"></div>
+            <span class="category-text">Contemporary Art</span>
+        </div>
+    </div>
+    <!-- RATE -->
+<div class="rate">
+    <div class="rate-box">
+        <h1>8K</h1>
+        <h6>Interior Projects</h6>
+        <p>Successful interior design projects completed with utmost attention to detail.</p>
+    </div>
+    <div class="rate-box">
+        <h1>30</h1>
+        <h6>Years of Work</h6>
+        <p>Over 30 years of experience in delivering quality furniture solutions.</p>
+    </div> 
+    <div class="rate-box">
+        <h1>16K</h1>
+        <h6>Satisfied Clients</h6>
+        <p>Thousands of clients trust us for their home and office furnishing needs.</p>
+    </div>
+    <div class="rate-box">
+        <h1>98%</h1>
+        <h6>Happy Rates</h6>
+        <p>A proven track record of high customer satisfaction and positive feedback.</p>
+    </div>
+</div>
+<!-- Feedback -->
+<div class="feedback-section">
+    <h2>What Our Clients Say About Us</h2>
+    <div class="feedback-container">
+        <div class="feedback-card">
+            <img src="client1.jfif" alt="Alice Johnson">
+            <h4>Alice Johnson</h4>
+            <p>Great service and support throughout the project!</p>
+            <p class="feedback-detail">The team was very responsive and attentive. I appreciated their professionalism and dedication to quality.</p>
+        </div>
+        <div class="feedback-card">
+            <img src="client2.jfif" alt="Bob Smith">
+            <h4>Bob Smith</h4>
+            <p>Exceeded my expectations in every way!</p>
+            <p class="feedback-detail">I was impressed with the final results. Their design suggestions made a significant impact.</p>
+        </div>
+        <div class="feedback-card">
+            <img src="client3.jfif" alt="Charlie Brown">
+            <h4>Charlie Brown</h4>
+            <p>The attention to detail was fantastic!</p>
+            <p class="feedback-detail">Every aspect of the project was executed with care. I couldn't have asked for a better experience.</p>
+        </div>
+        <div class="feedback-card">
+            <img src="client4.jfif" alt="Diana Prince">
+            <h4>Diana Prince</h4>
+            <p>I loved the final outcome. Highly recommend!</p>
+            <p class="feedback-detail">The quality of work is unmatched. They went above and beyond my expectations.</p>
+        </div>
+        <div class="feedback-card">
+            <img src="client5.jfif" alt="Ethan Hunt">
+            <h4>Ethan Hunt</h4>
+            <p>Professional and efficient service!</p>
+            <p class="feedback-detail">I appreciated their punctuality and reliability throughout the project. Excellent work!</p>
+        </div>
+        <div class="feedback-card">
+            <img src="client6.jfif" alt="Fiona Apple">
+            <h4>Fiona Apple</h4>
+            <p>Fantastic work. I am very pleased!</p>
+            <p class="feedback-detail">Their creativity and expertise transformed my vision into reality. I highly recommend their services!</p>
+        </div>
+    </div>
+</div>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <p>At FURNIX, we provide high-quality, stylish furniture designed to enhance your living space. Our commitment to quality and customer satisfaction is our top priority.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="returns.html">Returns</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: info@furnix.com</p>
+            <p>Phone: +1 (234) 567-890</p>
+            <p>Address: 123 Furniture St, Design City, DC 12345</p>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 FURNIX. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="scrpt.js"></script>
+</body>
+</html>
